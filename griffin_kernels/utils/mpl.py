@@ -19,7 +19,7 @@ else:
 
 
 # Mapping of matlotlib backends options to Griffin
-MPL_BACKENDS_TO_SPYDER = {
+MPL_BACKENDS_TO_GRIFFIN = {
     'inline': 'inline',  # For Matplotlib >=3.9
     inline_backend: "inline",  # For Matplotlib <3.9
     'qt5agg': 'qt',

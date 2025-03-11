@@ -44,7 +44,7 @@ from griffin_kernels.utils.pythonenv import (
     PythonEnvType,
 )
 from griffin_kernels.utils.iofuncs import iofunctions
-from griffin_kernels.utils.mpl import automatic_backend, MPL_BACKENDS_TO_SPYDER
+from griffin_kernels.utils.mpl import automatic_backend, MPL_BACKENDS_TO_GRIFFIN
 from griffin_kernels.utils.nsview import (
     get_remote_data, make_remote_view, get_size)
 from griffin_kernels.utils.style import create_style_class
@@ -529,7 +529,7 @@ class GriffinKernel(IPythonKernel):
         """Get current matplotlib backend."""
         try:
             import matplotlib
-            return MPL_BACKENDS_TO_SPYDER[matplotlib.get_backend().lower()]
+            return MPL_BACKENDS_TO_GRIFFIN[matplotlib.get_backend().lower()]
         except Exception:
             return None
 
