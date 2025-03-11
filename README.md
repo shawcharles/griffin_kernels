@@ -1,1 +1,1 @@
-# Jupyter kernels for Griffin 
+Jupyter kernels for Griffin 
